@@ -1,0 +1,12 @@
+<div class="locator-container">
+    <h2>Locator</h2>
+    <div>
+        <p>Latitude:</p>
+        <p-inputNumber [(ngModel)]="locate.latitude" inputId="minmaxfraction" mode="decimal" [minFractionDigits]="8"> </p-inputNumber>
+    </div>
+    <div>
+        <p>Longitude:</p>
+        <p-inputNumber [(ngModel)]="locate.longitude" inputId="minmaxfraction" mode="decimal" [minFractionDigits]="8"> </p-inputNumber>
+    </div>
+    <p-button (click)="onSubmit(locate)" label="Locate" styleClass="p-button-sm"></p-button>
+</div>

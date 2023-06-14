@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.red {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    background-color: #ff0000;
+}
+.green {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 0;
+    right: 0;
+    background-color: #008800;
+}
+.blue {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    background-color: #0000FF;
+}
+.black {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    bottom: 0;
+    right: 0;
+    background-color: #000000;
+}
