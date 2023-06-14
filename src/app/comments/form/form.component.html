@@ -1,0 +1,13 @@
+<div class="comment-container">
+    <div>
+        <span>Name: </span>
+        <input type="text" [(ngModel)]="comment.name">
+    </div>
+    <div>
+        <p>
+            <label for="comment">Comment</label>
+        </p>
+        <textarea id="comment" cols="30" rows="10" [(ngModel)]="comment.comment"></textarea>
+    </div>
+    <button (click)="onSubmit()">Submit</button>
+</div>

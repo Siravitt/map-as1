@@ -1,5 +1,5 @@
 import { Component, EventEmitter } from '@angular/core';
-import CustomPoint from '../models/locate.model';
+import ILocate from '../models/locate.model';
 import { LocatorService } from '../services/locator.service';
 import { MapService } from '../services/map.service';
 
@@ -9,7 +9,7 @@ import { MapService } from '../services/map.service';
   styleUrls: ['./locator.component.css'],
 })
 export class LocatorComponent {
-  locate: CustomPoint = {
+  locate: ILocate = {
     latitude: null,
     longitude: null,
   };
@@ -23,7 +23,7 @@ export class LocatorComponent {
     });
   }
 
-  onSubmit(value: CustomPoint) {
+  onSubmit(value: ILocate) {
     this.mapService.clearGraphic();
     this.locatorService.setLocate = value;
     this.locatorService.emitLocate();

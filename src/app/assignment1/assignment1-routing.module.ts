@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ColorComponent } from './color/color.component';
 import { PetfolioComponent } from './petfolio/petfolio.component';
-import { CommentSimulatorComponent } from './comment-simulator/comment-simulator.component';
 
 const routes: Routes = [
   {
@@ -12,10 +11,6 @@ const routes: Routes = [
   {
     path: '2',
     component: PetfolioComponent,
-  },
-  {
-    path: '3',
-    component: CommentSimulatorComponent,
   },
 ];
 

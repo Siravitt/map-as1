@@ -1,0 +1,13 @@
+<h3 *ngIf="newComments.length">Comments</h3>
+<div class="list-container" *ngFor="let comment of newComments; let i = index;">
+    <div class="list">
+        <span>{{ comment.name }}</span>
+        <span>{{ comment.date }}</span>
+    </div>
+    <p>{{ comment.comment }}</p>
+    <div class="list">
+        <button (click)="editHandler(i)">Edit</button>
+        <button (click)="deleteHandler(i)">Delete</button>
+    </div>
+    <hr>
+</div>

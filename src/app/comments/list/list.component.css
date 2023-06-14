@@ -1,0 +1,8 @@
+.list-container {
+    width: 250px;
+}
+
+.list {
+    display: flex;
+    gap: 2rem;
+}
